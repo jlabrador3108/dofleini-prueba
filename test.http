@@ -1,0 +1,50 @@
+###
+GET http://localhost:1234/modulos
+
+###
+GET  http://localhost:1234/sub_modulos
+
+###
+POST http://localhost:1234/modulo
+content-type: application/json
+
+{
+    "name": "Jorge  asd asd asd asda sdasdasdasd a dasd",
+    "description": "Jorge"
+    
+}
+
+###
+POST http://localhost:1234/sub_modulo
+content-type: application/json
+
+{
+    "name": "sub1",
+    "description": "Sub 1",
+    "modules": ["65c36e0448c1e344c33cd2e7","65c36dcd1445b2968ee69bee"]
+}
+
+###
+PUT http://localhost:1234/modulo/relleenarrr
+content-type: application/json
+
+{
+    "name": "Jorge",
+    "description": "asdasd"
+}
+
+###
+PUT http://localhost:1234/sub_modulo/relleenarrr
+content-type: application/json
+
+{
+    "name": "Jorge",
+    "description": "asdasd",
+     "modules": ["65c36e0448c1e344c33cd2e7"] 
+}
+
+###
+DELETE http://localhost:1234/modulo/65c375840105066c22932864
+
+###
+DELETE http://localhost:1234/sub_modulo/65c378ca3e9441b0e5654cc4
